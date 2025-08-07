@@ -1,6 +1,5 @@
-package com.example.smarthomeesp32v2.ui.theme
+package com.example.smarthomeesp32.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

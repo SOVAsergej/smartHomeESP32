@@ -1,4 +1,4 @@
-package com.example.smarthomeesp32v2
+package com.example.smarthomeesp32
 
 import org.junit.Test
 
