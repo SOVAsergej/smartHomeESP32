@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "SmartHomeESP32v2"
+rootProject.name = "SmartHomeESP32"
 include(":app")
  

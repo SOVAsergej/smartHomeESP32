@@ -1,6 +1,6 @@
-package com.example.SmartHomeESP32v2
+package com.example.SmartHomeESP32
 
-import com.example.SmartHomeESP32v2.R
+import com.example.SmartHomeESP32.R
 import android.app.Activity
 import android.os.Bundle
 import android.widget.Button

@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.SmartHomeESP32v2"
+    namespace = "com.example.SmartHomeESP32"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.SmartHomeESP32v2"
+        applicationId = "com.example.SmartHomeESP32"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
