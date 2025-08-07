@@ -90,7 +90,12 @@
 
 
     </LinearLayout>
-
+    <Button
+        android:id="@+id/status"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"/>
     <TextView
         android:id="@+id/responseText"
         android:layout_width="match_parent"

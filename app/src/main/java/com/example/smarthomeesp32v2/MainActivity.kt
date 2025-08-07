@@ -28,6 +28,7 @@ class MainActivity : Activity() {
 		val gasi2Button = findViewById<Button>(R.id.gasi2)
 		val paliAButton = findViewById<Button>(R.id.paliA)
 		val gasiAButton = findViewById<Button>(R.id.gasiA)
+		val status = findViewById<Button>(R.id.status)
 		val responseText = findViewById<TextView>(R.id.responseText)
 
 		fun doSmth(command: String) {
@@ -53,6 +54,9 @@ class MainActivity : Activity() {
 
 		rebootButton.setOnClickListener {
 			doSmth("REBOOT")
+		}
+		status.setOnClickListener {
+			doSmth("STATUS")
 		}
 		pali1Button.setOnClickListener {
 			doSmth("PALI_1")
