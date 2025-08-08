@@ -20,13 +20,14 @@ class MainActivity : Activity() {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_main)
 		val rebootButton = findViewById<Button>(R.id.rebootButton)
+		val status = findViewById<Button>(R.id.status)
+		val refresh = findViewById<Button>(R.id.refresh1)
 		val pali1Button = findViewById<Button>(R.id.pali1)
 		val gasi1Button = findViewById<Button>(R.id.gasi1)
 		val pali2Button = findViewById<Button>(R.id.pali2)
 		val gasi2Button = findViewById<Button>(R.id.gasi2)
 		val paliAButton = findViewById<Button>(R.id.paliA)
 		val gasiAButton = findViewById<Button>(R.id.gasiA)
-		val status = findViewById<Button>(R.id.status)
 		val responseText = findViewById<TextView>(R.id.responseText)
 
 		fun doSmth(command: String) {
@@ -73,6 +74,9 @@ class MainActivity : Activity() {
 		}
 		gasiAButton.setOnClickListener {
 			doSmth("GASI_A")
+		}
+		refresh.setOnClickListener {
+			doSmth("TEMP")
 		}
 	}
 }
