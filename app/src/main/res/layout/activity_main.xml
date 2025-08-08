@@ -17,7 +17,7 @@
             android:id="@+id/rebootButton"
             android:layout_width="fill_parent"
             android:layout_height="60dp"
-            android:text="Reboot" />
+            android:text="@string/reboot" />
 
         <LinearLayout
             style="?android:attr/buttonBarStyle"
@@ -31,7 +31,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="60dp"
-                android:text="Pali_1" />
+                android:text="@string/pali_1" />
 
             <Button
                 android:id="@+id/gasi1"
@@ -39,7 +39,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="60dp"
-                android:text="Gasi_1" />
+                android:text="@string/gasi_1" />
         </LinearLayout>
 
 
@@ -55,7 +55,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="60dp"
-                android:text="Pali_2" />
+                android:text="@string/pali_2" />
 
             <Button
                 android:id="@+id/gasi2"
@@ -63,7 +63,7 @@
                 android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="60dp"
-            android:text="Gasi_2" />
+            android:text="@string/gasi_2" />
         </LinearLayout>
         <LinearLayout
             style="?android:attr/buttonBarStyle"
@@ -77,7 +77,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="60dp"
-                android:text="Pali_A" />
+                android:text="@string/pali_a" />
 
             <Button
                 android:id="@+id/gasiA"
@@ -85,7 +85,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="60dp"
-                android:text="Gasi_A" />
+                android:text="@string/gasi_a" />
         </LinearLayout>
 
 
@@ -95,7 +95,7 @@
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Status"/>
+        android:text="@string/status"/>
     <TextView
         android:id="@+id/responseText"
         android:layout_width="match_parent"

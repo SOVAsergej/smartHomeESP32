@@ -1,10 +1,10 @@
-package com.example.SmartHomeESP32
+package com.example.smarthomeesp32
 
-import com.example.SmartHomeESP32.R
 import android.app.Activity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import com.example.SmartHomeESP32.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -19,8 +19,6 @@ class MainActivity : Activity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_main)
-		val light1State = false
-		val light2State = false
 		val rebootButton = findViewById<Button>(R.id.rebootButton)
 		val pali1Button = findViewById<Button>(R.id.pali1)
 		val gasi1Button = findViewById<Button>(R.id.gasi1)
@@ -39,13 +37,13 @@ class MainActivity : Activity() {
 						Socket("192.168.1.36", 80).use { socket ->
 							val output = PrintWriter(socket.getOutputStream(), true)
 							val input = BufferedReader(InputStreamReader(socket.getInputStream()))
-							output.println("$command")
+							output.println(command)
 							input.readLine() ?: "No response"
 						}
 					}
 					responseText.text = response
 				} catch (e: UnknownHostException) {
-					responseText.text = "Error: Cannot connect to server"
+					responseText.text = "Error: Cannot connect to server. ${e.message}"
 				} catch (e: Exception) {
 					responseText.text = "Error: ${e.message}"
 				}

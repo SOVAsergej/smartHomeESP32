@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">SmartHomeESP32</string>
+    <string name="reboot">Reboot</string>
+    <string name="status">Status</string>
+    <string name="pali_1">Pali 1</string>
+    <string name="gasi_1">Gasi 1</string>
+    <string name="pali_2">Pali 2</string>
+    <string name="gasi_2">Gasi 2</string>
+    <string name="pali_a">Pali A</string>
+    <string name="gasi_a">Gasi A</string>
 </resources>
